@@ -1,0 +1,302 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.3rem;
+  font-family: arial;
+}
+
+h1,
+h2,
+p {
+  font-family: arial;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.text-name p {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.wrap {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap .main {
+  flex-grow: 1;
+}
+
+.main {
+  width: 45%;
+  margin: auto;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/*NAME*/
+
+.text-name,
+h1 {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+}
+
+.text-name {
+  bottom: 30%;
+  left: 10%;
+  background-color: hsla(246deg, 87%, 76%, 0.5);
+  padding: 4px 3px 4px;
+}
+h1 {
+  top: 18%;
+  left: 40%;
+}
+
+.images-name img {
+  width: 100%;
+  display: block;
+}
+
+/*ABOUT ME*/
+
+.sobremi {
+  width: 100%;
+  background: #7299fe;
+  padding-bottom: 10px;
+}
+
+.sobremi h2 {
+  color: #1d06a7;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.8rem;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+.sobremi p {
+  color: white;
+  font-size: 1rem;
+  padding: 0px 40px;
+  margin-bottom: 15px;
+}
+
+.sobremi button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #d271ff;
+  color: white;
+  background: #d16eff;
+  border-radius: 6px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 7px 25px;
+  margin-left: 40px;
+  margin-bottom: 7px;
+}
+
+/*SKILLS*/
+.skills {
+  width: 100%;
+  background: #9022ff;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.skills h2 {
+  color: #26cc4b;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.8rem;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.barras-1,
+.barras-2,
+.barras-3 {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.barras-1 p,
+.barras-2 p,
+.barras-3 {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.barra-izquierda {
+  width: 48%;
+}
+
+.barratotal {
+  background-color: white;
+  width: 100%;
+  height: 8px;
+  margin: 10px 0px;
+  border-radius: 15px;
+}
+
+.barraavance {
+  background-color: #57eff9;
+  width: 48%;
+  height: 8px;
+  border-radius: inherit;
+}
+
+.barra-derecha {
+  width: 48%;
+}
+
+/*portafolio*/
+
+.briefcase {
+  width: 100%;
+  background: #ffd233;
+  padding-bottom: 20px;
+}
+
+.briefcase h2 {
+  color: #00ad84;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.8rem;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.briefcase-part1,
+.briefcase-part2 {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: auto;
+}
+
+.briefcase figure {
+  width: 100%;
+  padding: 2px;
+}
+.briefcase-part1 img,
+.briefcase-part2 img {
+  width: 95%;
+}
+
+/*clientes*/
+.clientes {
+  width: 100%;
+  background: #3f4e62;
+  padding-bottom: 10px;
+}
+
+.clientes h2 {
+  color: #adff28;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.8rem;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.clientes-fig {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+.clientes-fig figure {
+  width: 100%;
+  padding: 2px;
+}
+
+.clientes-fig img {
+  width: 95%;
+}
+
+/*contacto*/
+.contact {
+  width: 100%;
+  background: #1687a0;
+  padding-bottom: 15px;
+}
+
+.contact h2 {
+  color: #ff1b1b;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.8rem;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.form-contact {
+  width: 100%;
+  padding: 0px 10px;
+  padding-bottom: 20px;
+}
+
+.form-part1,
+.form-part2 {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  padding-bottom: 10px;
+}
+.form-contact input {
+  width: 46%;
+}
+
+.form-part3 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-part3 textarea {
+  width: 96%;
+  resize: none;
+}
+
+.contact input,
+textarea {
+  font-size: 1.1rem;
+  padding: 10px;
+}
+
+.form-part4 {
+  display: flex;
+  justify-content: center;
+}
+
+.contact .form-part4 button {
+  background: #233451;
+  color: white;
+  padding: 11px 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1px solid #233451;
+}

@@ -1,0 +1,263 @@
+/*
+GLOBAL
+estilos globales, aca ira los selctores de etiquetas globales
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*STICKY FOOTER*/
+.wrap{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap .main{
+    flex-grow: 1;
+}
+/**/
+
+body{
+    font-size: 16px;
+    font-family: arial;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+
+/*header
+
+aca iran estilos del header
+*/
+
+.header{
+    background:#00AF1C;
+    padding:20px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.header .logo{
+    font-size: 35px;
+    color:white;
+    font-weight: bold;
+    font-family: Arial;
+
+    
+}
+
+.header ul {
+    display:flex;
+    margin-right: 20px;
+    list-style: none;
+}
+
+header li{   
+    color:white;
+    font-family: arial;
+    padding:15px;
+
+}
+
+/*main*/
+
+
+.main{
+    padding:30px;
+
+}
+
+.main{
+    flex-grow:1;
+}
+
+
+
+.main > section {
+    margin-bottom: 80px;
+}
+
+
+
+.main section{
+    justify-content:center;
+}
+
+.main p{
+    line-height: 26px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    
+}
+
+.main h2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: Arial;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+
+/*main
+
+*/
+
+
+
+/*
+
+home
+aca iran estilos d ela seccion home
+*/
+.home {
+  color:#3B06D2;
+
+}
+
+.images{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+
+.images figure{
+    margin-right: 30px;
+}
+
+
+
+/*
+
+servicios
+aca iran estilos d ela seccion servicio
+*/
+
+.servicios {
+    color:#D206B2;
+
+  }
+
+.ul-servicios {
+    margin-left: 41px;
+    margin-top: 34px;
+    line-height: 26px;
+    font-size: 18px;
+    font-family: arial;
+    font-weight: bold;
+    line-height: 43px;
+}
+
+ul.ul-servicios li:nth-child(1) {
+    color:#AE8800;
+}
+ul.ul-servicios li:nth-child(2) {
+    color:#AE280B;
+}
+
+ul.ul-servicios li:nth-child(3) {
+    color:#060564
+}
+
+ul.ul-servicios li:nth-child(4) {
+    color:#637300
+}
+
+
+/*
+
+portafolio
+aca iran estilos d ela seccionportafolio
+*/
+.portafolio {
+color:#AAD206;
+
+}
+
+.ul-portafolio {
+    margin-left: 41px;
+    margin-top: 34px;
+    line-height: 26px;
+    font-size: 18px;
+    font-family: arial;
+    font-weight: bold;
+    line-height: 43px;
+}
+
+ul.ul-portafolio li:nth-child(1) {
+    color:#AE8800;
+}
+ul.ul-portafolio li:nth-child(2) {
+    color:#AE280B;
+}
+
+ul.ul-portafolio li:nth-child(3) {
+    color:#060564
+}
+
+ul.ul-portafolio li:nth-child(4) {
+    color:#637300
+}
+
+
+
+
+
+/*
+
+contacto
+aca iran estilos d ela seccioncontacto
+*/
+
+.contacto {
+    color:#06D2C6;
+    
+    }
+
+
+.contact input,
+.contact textarea{
+    width:100%;
+    border: 1px solid black;
+    padding:20px;
+    margin-bottom: 20px;
+}
+
+.contact button{
+    padding: 10px 20px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #22a900;
+    color: #22a900;
+}
+
+
+
+/*
+footer
+
+aca iran estilos d ela seccion footer
+
+
+*/
+
+.footer {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00AF1C;
+    color:#fff;
+}
+
+footer p{
+    margin: 0;
+}

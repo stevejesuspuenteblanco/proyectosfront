@@ -1,0 +1,25 @@
+/*Colores*/
+/*FUENTES*/
+html {
+  font-size: 64.5%;
+}
+
+body {
+  font-size: 1.3rem;
+  font-family: arial;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*
+header
+*/
+.header {
+  padding: 20px;
+  background: #1c0055;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

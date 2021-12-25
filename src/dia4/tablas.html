@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 4 - Tablas</title>
+</head>
+<body>
+    <!--Etiqueta table para tablas-->
+    <table border="1" >
+        <!--Una tablas esta compuesta por una cabecera y un cuerpo-->
+        <!--Existe el table header que es la cabecera de mi tabla-->
+        <!--Es la parte estatuca de una tabla porque basicamente tiene como datos a los titulos de una cabecera-->
+        <thead>
+            <!--thead es el contenedor de mi cabecera-->
+            <!--para definir los elemntos de mi cabecera deben estar dentro de una fikla-->
+            <tr>
+                <!--Una fila esta compuesta por uno o varios elementos-->
+                <!--Para definir un elemento debe estar dentro de una celda-->
+                <!--cuando es una cabecera la etiqueta del elemento se lla th-->
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Celular</th>
+                <th>Correo</th>
+                <th>Fecha de nacimiento</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+        <!--El cuerpo de la tabla va abajo del thead-->
+        <!--El cuerpo de la tabla es el contenedor de los datos-->
+        <tbody>
+            <!--Al igual que el thead tenia filas nuestro body tambien tiene filas-->
+            <tr>
+                <td>Linder</td>
+                <td>Hassinger</td>
+                <td>99999999</td>
+                <td>linder@gmail.com</td>
+                <td>01/01/01</td>
+
+            </tr>
+            <tr>
+                <td>Lucas</td>
+                <td>Zapata</td>
+                <td>393939</td>
+                <td>Lucas@gmail.com</td>
+                <td>01/02/01</td>
+                <td>10 años</td>
+            </tr>
+        <table>
+            <tr>
+                <td>Curso</td>
+                <td>Profesor</td>
+                <td>Cantidad alumnos</td>
+                <td>Hora</td>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Juan</td>
+                <td>50</td>
+                <td>10:00</td>
+            </tr>
+        </table>
+        <h2>Tabla de usuario con imagenes</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                    <th>Foto</th>
+                    <th>Github</th>
+                    <th>PDF</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Juan</strong></td>
+                    <td><i>Perez</i></td>
+                    <td><u>50</u></td>
+                    <td>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr1kj5PSX70IOAnofIXdgpEglFC5cLz-LjTA&usqp=CAU" alt="" width="100">
+                    </td>
+                    <td>
+                        <a href="">Link de github</a>
+                    </td>
+                    <td>
+                        <iframe src="../../files/Desafio_FullStack.pdf" ></iframe>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        </tbody>
+    </table>
+ <!-- TAREA: CREAR UNA TABLA DE 10 FILAS SOBRE ALGUN TEMA QUE LES GUSTE, DEBE IMAGENES -->
+     <table border="1">
+         <thead>
+             <tr>
+                 <th>COMANDOS DE GIT</th>
+                 <th>Accion</th>
+             </tr>
+         </thead>
+         <tbody>
+             <tr>
+                 <td>git add --all </td>
+                 <td>Añadimos todos los archivos para el commit omitiendo los nuevos</td>
+             </tr>
+             <tr>
+                <td>git add *.txt</td>
+                <td>Añadimos todos los archivos con la extensión especificada</td>
+            </tr>
+            <tr>
+                <td>git add docs/*.txt</td>
+                <td>Añadimos todos los archivos dentro de un directorio y de una extensión especifica</td>
+            </tr>
+            <tr>
+                <td>git add docs/</td>
+                <td>Añadimos todos los archivos dentro de un directorios</td>
+            </tr>
+            <tr>
+                <td>git commit -a -m "Texto que identifique por que se hizo el commit"</td>
+                <td>Agregar y Cargar en el HEAD los cambios realizados</td>
+            </tr>
+            <tr>
+                <td>git commit -a </td>
+                <td>De haber conflictos los muestra</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="data:image/png;base64,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"
+                     alt="" width="200">
+                </td>
+                <td>
+                    <a href="https://git.com">Ir a git</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="data:image/png;base64,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"
+                     alt="" width="200">
+                </td>
+                <td>
+                    <a href="https://github.com">Ir a github</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUPDxAVFRUVFRUVFRUWFRUVFRUVFRUWFhUVFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0lHyUtLS0tKy0tLS0tLy0vLS0tLS0tLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAIsBagMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAABAgAFAwQGBwj/xABNEAABBAADBAYECQkFBgcAAAABAAIDEQQSIQUGMVETIkFhcZEygaGxBxQjQlJicpLBMzRTc4KistHSFlSTwvAVJEN0g7MlRWRlddPh/8QAGgEAAgMBAQAAAAAAAAAAAAAAAAEDBAUCBv/EADYRAAEEAAMECAYCAQUBAAAAAAEAAgMRBCExEkFR8BNhcYGRobHRBRQiMsHhUvHSFTNCYpIW/9oADAMBAAIRAxEAPwDi1AnpRevXm0tI0ismHgc9zY2ek9zWN+04hov1lCYzyWFGl0G8m9OEwM/xJuDZLG1rS91tDrcLF20lzsuUkkjUlY8A/ZuP6uFldh5jwil1BPJoJN/suv6qpNx0RNHLnx8LVl2EeBYVGpStcRu9imP6PoHvPY6NrnsI5hwGngaI7Qsse7OLPGEt+0+JvszX7FZMjBvHiFB0T/4lU1KUr126eK+i0+Ekf4las2wcUwW7Dvrm3LJ/ASkHs4jxCDE8blWUpSvoN3S1nT42ZuGiHHMRnPdR0aTy1d9VV829uy4NIMLLiD9KQ5WnvGb+gKCXFxR5EqWPDPfuWlSFK82/hIujgxeHZkjnYHlvY1xa14rlo4ihpbCdLVLSnY8PaHBQvYWGilUTKLtcpaUpMlpCEEUyCSSVBMihNIompBCEECmQQhLSlJqQpCEtIJlEISlBOhSEJCiiVEJpUExUQmlQTIUkhRRBFCaBSEJ1EkLHXcPJGu4eQTFKik0PUPIKKKJIVhSlI0pSnUSFK03XH+9w/aJ9bWPcPaAqylc7qYNz8Q17TlbCRI9x4ADg3xdqO4Bx7FHLQYew+i7i+8dq4DfWUux+KLjdTyMH2WOLGD1NaAqFX++WOinxk02HvI5womhmIaGlwHYCRYvXVUC8q/Nx7V6Bv2hdVht+9oMiELZ7DeDnMY+SuAbneCSB38FXz7045+rsbiDy+WeK8ADoqVRG0TqUBrRuVr/aHGf33Ef40n9S3cJvnj4/RxkrgOyQ9K3ykuvHiudUXIJGiZaDqFZ7Z2zPi5DLiJC89g4NYD81jeDR3BViiiCbTAperbLObYmHv5k7g3wLsQSP3z5KspWu6cseM2c3BwktmwpMhjNfK26Q2DXA9I4DkQ0HQ2qwL0WAIMIAKw8ZYks85/tLSlJlFdVS0tKUmpSkJ2lpRMgki0FEVE0WkpRNSlJItIimIQpFJoIJqQSRaWlKTKIQlSp6UpJNYygnIQpCEqFJkEIQpa+LxscXpu1+iNX+sdnrWrtnaXR/Jxnr/Od9HuH1vd7uac6+Kz8VjhGdhgs+Q9zx3DrOl7D4TbG07Ievt+VeS7f+hF63uJ9gWH+0En6OPyf/AFLSwmBkl/JtsDidAB4kreG70n6SMet/4NVWOXGSC26djfK1YfHhWGnep/CePb5+dE39hxZ77W9htrRSaXlP16A9T+HnSp8RsiVgzFuYDiWm68RxHkq1L5zExOqQdxFeBFfnsT+WhkFsPgb8j+l2pCiotmbTLKZIbZwB7WeHMd3l33pC04JmzNtveOHO4qhNC6J1HxUpJSdSlMolYoUmpSlOoUoC3958WcLslrGaPxjzmPb0ev8AlAH/AFHLTISfCqfkNngcOgP8EKofEHlsWXPNq5gWgyZ880vOUaTxMLiGtBJJAAAsknQADtK9w3O+C7Dwxtl2gwTTmiYi49FEfoENI6R/YbOXsAPFebe8MFlb0cbnmmrwykF9SO3OwbW9bZsAae0wR+01Y9a1ZNytmuGU7Pg8Q1zT5tcFF8w3eCp/lHbiF8yqL6Qh+DzZTTmGBYfGSdw8jJS3f7H7NH/l+H+5fvKXzLUfKP6l8x0gvprH7g7OeypNnRsB4OYHxOHLrNOnrFdy8d+EPcV2znNlicZMNI7K1zqzsfV9HJWhNAkEcQDwpdsla41vUT4XMF7lR7o7WOExcU900ODZNeMbuq/2Gx3gHsXoO9OD6LFSAcHVIP2/S/fD15EvaN7tTh3HicOwnxOvvJWz8Md9Zbzzksr4gBs3zr+1z1KUmpGltrHSUpSJUTQlpFFSkkWlpSkUEItLSlJ0EIS0hSalKQhKgQmpSkISoooITtCkCEUEqXSCCYhSkUhJSw4qURsdIfmiwOZ4Aea2FTbzy1G1n0nX6mj+bvYoZ5Oijc/gPPQedKWFnSPDeJ/vytc7I8uJc42SSSeZPFb+x8B0r+t6DdXd/Jo8dfUCqtdhsWDJC3m75Q+vh+6B5rDwMIlk+rMDM9fC+dAtbFymOPLU5LboAAAUBoANAB3BBMUtL0CxlAqfbezgQZmCiPTA4H64/HzVwjlvQ8DofA6KOWFsrdh39HipIpTG7aHIXCrpNg4jOwsPFnD7B4eR94XPzMyuLeRI8jSst3T8qRzY72UfwWHgXlk4HHLnvWtimh0RPDNdAlTKLfWOrRos00WeQ1PkFts2VO70cPL/AIbwPMhd86UsAAmELerkaBGym6DJlfbTqQNBpaxZwbp2Iku/muZRBqmuyMHhRrvVY403k0eNqUYYbyfRcWNhYr+7SeQH4rT+FDCu+J4KR7S10eaFwOhBLRXsjJ9a7ePZznaiHHtvjnx8jK9UeIcq3eHduTEQSQNa6yMzOkx+Ilp7dR8nIHDmOzjxVXETGZhbQ8/yp4IxE61wfwP4Jsu04y8X0TJJgD2vYw5PIkH1L6CE4jbLORfQxSS1zLBY/FfOPwdbTGD2lC+Y5G5nQy5tMokaYyXXwpxBPgvpBrW9aOUWx7XRyD6rtCvOy5SNJ0XosNnG4Lit2d6sW7FxsnlMjJ39G9hAyjODRYK6tGhXK7s6rsnNokciR5Ei/YqLYu5rcLO3Ey4hkrYyXQtaOs91ENc/WhQJ4aXR04K98eJ4+J4qGS6AOqvOMbnkxjKhurPn23KJmStYHzOFiKN8pHPILAWjgtoRzOlZHmuGTo35mloza+jzHVPGjwNUQTvRZdWyC2Pa6N4+q8UVyzJwtcvstIXF7u73Yp+LY3ESdJFO8RujLW5GdJo3JQsU4tGpNi711V1vtgGzYHFwP1AilonsdDb2O8bYPMrBsbcn4viG4iaaN0URzQhl55XAEMzCqFcdCbIvQaIfCBtIQbOxUrjq+N0be985yaeAc4+DSpHB1gHW+f0uZzEQ4x6V2Z5+mXovmuGMuIa0WSQAO8mgvad7cM8zMayN7gyJrLaxzhYLtLA5UvNtwtkuxGMjpri2I9K/LlBphBaAX9Wy7KNea9rhfPrmjxTe8nZ5vwDST7Fu4J/Rku7l5rGAPAavPXwOHpMcPFrh7wsYcOYXpEUr8zScRiutfUMTQNPpObD1fvBZel6XMBJFKCAQxzBKALq3fKc/qhaQx3/XzVD5Ufy8v6XmdI0ut3nwELYi/oY4niRrY+j0zAgZg9oa1rfnHt4DXUhcnStxSdI3apVZWbBpLSlJqUpdrhJSWllpQhCaxoUslIUhCx0ompSk0JEE9IUhFpaQpPSFIQkpAhOhSKTSoJiEKQmEpUrmAfEAj2pqQpJNa0mBiPGKP1MDfaylmDQAGgUAAAOQAoBMoudkXdZp2apKgQmIUQhYyEHvDQXHg0WfUslf6/mub2ztPP8AJx+gDqfpkf5VDPO2Fm0ddw4nnVTwxGV2yO9VUjrJce0k+eqtN247kc7sa32uIHutVAC67ZmE6KMNPpHrO7j2D1e8lY2AjL5Q7cM/bzz7lp4yQNj2eOXvz1rYpCkyC3lkLtTvVPXUZGxxFOeGEudwF04kdnJaM22cS/0sRJ4Nd0Y8mUFp0pS6ETBoAoTM86krJHE+Z7Yxme5xoBzrs+Lj7VcQbuYmF4khfF0jesGtf1u8EOaAQbrU9q1t2wfjMZaarMT9kNOYLNvPsZ+GDsZghbMwxOJw2ZzA92VwMscsZEjMpcSWhwFesKpisRJFk0WN4VjDRsf9xz3d1e61N5t049oF0uHqDFt/KwvsB5HbfP644/Orin3e37xGADcHtnDShrQGxzgAuDRQAdrllaB85rrofO7LKO8ZC2nF07GiTDzFvQOxMOgLmtzHLTjl46EA6B61o94pmgxYhrJW8HMmb5h2mv7QKz3YFmKbtR+HPrrxvVaDcY/DOp3jzfhVcKXZbN3s2fiADDjYST81zxE/TjbZcp9atm/KMPRSDUECRmR+UkaOANtNcivKN7odmw4VmKl2dEJZdIYmvfH3l7uiLQWgUeF9YDw8iKx5cEI3bNrXjx7ntul9ZRsxBcDKWgNvSPO7PYoE9I0dE0ccjS43XXoEOyTvawXI5rBzc5rR5kr5IVtu/NhmTNONhMkJ0cGucxzbI64LeNcu1cfLAnVd/NuaNF9B7W302dhgTLi4y7XqRETPJ41UdgftEDvXmW38fjtuytjwuHdHhY3HJnNMzHQySv4OfWga26GguyT0mJ2ds/BlnQ7OikztEjJHOL2kHtHSZjyPZxCwY7b08oyZhGzhkjGUVyzelXdYHctTDfCDk4nn18ll4n4veXPPeliw0OzsO7B4V2eZ/wCcTD2taeziQAOAJvUrQZi5W+jK8eEjx7isQajS34oWxt2QsKSd73bWi3ott4lvDEPP26k/7gK3RvRKaE8UUwFH5RuttNtNC22CAR1dCqQhCk3Qxu1aEhPI3QlXO19uiaIQsicwEtLszy8DLwazQUPLw1KoqWSkCE2RtYKak+QvNlYJ5WsaXyODWjtPuHM9yrTvHhuGeTxDNPabVPvHO6bE9A3g0iNo7MxqyfWfYrmLdnDtFOD3ntddWe4DgFU6eaSRzYQKblZvM93PXmrXQwxsa6Um3Z0K055yW7g8ZHMCYnZqoHQgi+FghZWvaSQHAkcQCCR4gcFiwGz2QtcyOwHHMbNkdWtDXZqVT7A2c2OYvGJjk6jqDHGyDxL74AetTh8o2AWizrRquyzZUOzGdsgkVpYu+2hQV9SWRwaMznBoHEk0B2akrntq7XezEZI5h0dsushbqBm61FWW3JmOw8xjexwFDquDqt4rgl8y0iTZ1bffV6Ucxkn8u5pZf/KvOtctc1uxSsfqx7HVxLHB1eNJZsRGzR8kbSdae4A1z1VRuawmKSgT129n1StLfRpEsdj/AIQ/icuHYktwwn2e7vrVdtw4OI6Ha3691rqBR1HA6g8x2IUsMU8bWRh8kbT0UZp72NNZBrRKzveAMxcAOZIA14anRW7VZI9waLcQAOJJAA8SUkUjXascx1ccpBryWptuRrsPKWua7QDqkH545Kv3UlayKQvcxo6RurnAdh58VXdPUwirIi7vhfduU4huEyXoarw796vaQIRika8ZmOa4c2EH3KEKyoUhUpMgkhKUE1KFCaRRMghO0lKEgAkkADUk8AOZTUub3h2hmPQsPVaet9Z4/AKviJmws2z3DieebyU0ERlfsjv7Fj2ttUydSOxH5F/ee7uVOAnY0nQak6Acyuo2RskRU+QXJ2DsZ/N/uWGyOXGSEk9p3Ds/A/ta73x4ZlAdg49Z/J/QWPY+yclSSjr/ADW/R7z9b3ePC0ITlCluxxNiaGt05z59FkSSOkdtOWJROQlUi4V3SmVZKUpSWqyOGmdG8SRmnNNg6Hu1B4iuxXuB3jeZWdNkbEba8Bpy9YVmcXEmhy4USqKlKXD42u1C7ZK5uhVJj2ybIxbo3xuMDnvlhdH0UcjuqQwDEGNzqaSA6O6PaCHa3UfwlARhzpIXyiFrtcLICZiaMIcJqaBoc9V3ditYNqNdF8WxcLcRD2NdVtA0FE8a7DoR2FaLt29inrdFOzty5nkeF273rDkwU7CQzRa7MZDIAX69v9Lhd+N4jjZ84ke6JgqMPjZG5tgF9tY53Fw4lxPuGrt/ZAw7MMcxLpsO2d11Q6Rz8gb+yG33lWnwl7GgwmKZDho8jTC15tznEuL3gm3E9gHBJv8AnXAD/wBtwn8LlSLT9ROopXQ7NobobWnvJs2OGLBPjaQ6bCiWSyTbzI9tgHho0aLBtnZHQxYaYEluIh6TWrDmuLHt07NAR4q033FQ7N/5FntkkKyb5fmOyx/6eU+cqHNGfchjz9PXf5XZwOz7LwD3cQxzP2RYH8AWjS38EP8AwrA+D/eVp0vRYT/ZasDF10xSUpSekKVlVrSUpSekKQhJSlJ6QIQhcLHptHrf3k8e+TT8Ff7xQYl2U4ZzmhrXl9SCPhrqMwvQFaW9Gx35/jMIJui8N9JrhpmAGtaDhwK1P7Vy5Cx8cbiWlpcc16giyAatZPSMhMkcpLbdYI39h53havRumEckQDqFEGsu0XzkVm3Txksksgkle8CJxpz3OF23WiVpbpsDpZGHg6CRprjTqGl+K29y4HB0ry0hvRuAdRq9DVrBuV+Wd+qf/E1RwucThy4527XuXczWgYgNAqm6LV2ls9keJEDc2W2CyRm6wBOtV28lfbV2azD4WZkZeQSwnMRdiQDsAVZvQx0eKEpFtORzT2HIACL5232qx2ltJuIwcz2NLacwEEg6l4OldicYiYZ20A4bVZbqOnVSJDI9sLgSW/Tee+26+aptkbNmla50UoaA6iC57bNX80FYNsYKSFzWzPDiW2CHOdQsjtHcVf7lD5F/60fwKu31/LM/VD/uSKKXDsGCEu+hvy14aKSPEPOLMeVZ7s9OOqxb1jrw/wDLx+9yu9t/mX/Th97FV72Qm4JK6pgY2/rCzXk4I4/bjZYOgbG7MQwHUEDJRNVqeCsSSMZLiGuNFwy6/pI/Khjie+OBzRYBz6vqB/Cw4D8xn+23/Km2DsaOdrnyOeKdlAZXK7s35IYL8wn/AFjPexNsHa7IGOZK15zHMCyuVcDXLioWdD0kXS1Wxv01dSmd0uxL0V3t7tdGrDsouhxfRZvnmJ3JwvKDXjRXXkLk9jNdPi+my6B7pXdobqSBfjS66le+HAdG7Z+3aNdmXPaqePvpG7WuyL7VjpClkKWloaKnaQoUnIQpJNIpSakKQhYcXLkY+T6LCR49ntpcEuz29ph5P2R++xcUsP4s49I1vAX4k+y2Phrfoc7r9B+10W7OGBLpj2dVvjWp8a96vlo7vt/3dneXH94j8Fv0tLCMDIGgbxfjn+u5UcS8ulceuvBKlToFWFClQpNSlIQr6lKWSlKTVRJlUpPSt93dmtle50gtrK6vY5zroH6oDSSPBcvcGjaK6a0uNBaOB2VLNrGzq/TccrPUT6X7IKu8Puo0flJHHuY0NH333f3V0zWc/wD8Hc0cGhau1mzGF4wzw2Wuo4sEuU2LOQnraXz50apUXzyHTLs9z+guxJGDTRfW7TwGfr2Lxz4YZQ7HgAglsEbXD6LiXvo9+VzT61pfCKwh2Ca4URs3CAg8Qadoe8LsdjbhQGfp8fiX4h7nZ6LMsb3k2ekdmLn69nVvhfYqnFbuYva2PfiJoZMNCSBcrcj2wsAaAyM0XOPMDKC7isqSKQE7TaJ3c5LYjxMW02nCmgknS74DVUu/zaj2b/8AHw+0uP4p99GkYPZfL4q/Xv6SyPaPNeh/CDuZ8bgi+KgNkwzckcZIDXRAAZLOjSMoIJoauvsVNu/spuKwB2ftLDzQvwjz0MuUh1SFxphIp+oII4FuU2KtDonF5bWtKOHFtETHXoTY39teCvd1tnsxGzMGC801jqLK9IOc1wcHDspLit2JW/k3iT6p+Tf6g45T5rX3F3exWDl6NmLEmFNufGYnBwcW6ObqQx1gcHGx2Hs7oi+K0IHyxtDTlW7nPzVDESs6Q5Bw4jaB89/cvNJYXNJY9pa4cWuBBHqKWl6BtDAMlblkGnzXfOjPNp5cxwK4WeAsc6N3pNcWnlYNWO5X4pdvLeoHNAG005eYPA/jitelKT0gQplHaSkKT0gUJpUCOYB8QCnQRaSUoOcTxKakCE7TWMjSjRHIgEesFFuno037IDR5BPSFIQlc4nibQTUlpCYrRI5oIIIBB4ggEH1FJFAxvoRsbfHIxjb8gs1JaTCFj6FlV0bK5ZGUfEVSSWBjgGujjIHAFjCB4CtFmIQpCaxxxtaMrGtYOTGhg9gRpNSlIATSUgQmpAhNNLSCJChCEJaSp6USCawzQte0se3M08QSRdGxqCCtL/Y2H/Qs+9N/9iy7Q2nHBlEgecwJGUA8DWtuC0/7SYflN9xn9arSPw21UmzY4gE+YU7WzVbNquraryVlFE1jQxjcrRwAJNWbOpJPEokIQTB7WyNunCxmAB41qATy5plM2qFaLg3eeqRAhOUCmklS0mKlIXS6Ok1JsqmVJU7S5Vc7s4wMc6N5oPylpJoB7bFE9mYOq+YHNVFKFq4e3baQV0x+y66Xogd2HQ9oPpf670VxuB21LGA01I0cGm7aOTXjUeux3K5w+8EB9LMz7TS8eosp3m1U3RPbuvs9l10bHfY6uo5eehS7UbUj67QD6y2yfPX1pcW0skJZoeq8dxc0E+qyRXLRZsSxkri5k8dkAZS4A6Cu1wPsWfFbPke7M0WKaPIV2WpWzMAaCd2e7hxUgw0v8Vi2rPmytGjXNDyOeb0Qe4VflyWtNHQj+szP95zq9gC3sRs2V2WmHqxsYbzcWjWtOCXE4FxDMxDcsbWHMa1F3V1pqhssbQAHJDDy/wAStrANAjZXa0OPi7U/67lsLQ+Pwxsa10zOq0N0OcmhXoszLQxO8cY/Jte8/wCGz8XHyCgpziSBz30FwYCPuIHf+BauZpAASSA0DrOPBre0n+XeFwWPxHSSvlqsziQDxDeDQe+gFnx+0JJvTcMoNhjRTAedcSe8krUpWoYtjM6oc5uzst01vidNN1BYqQIWYhLSnXCx0gQslKUmhYiEKWakpCELFShCyUgQhCxUhSy0lpCEpCFJqUpNCx0hSyUlpMJ2kpLSchSkISIUmUpNdWkISkJqUpCLWNAhZSEtITWNAhPSCE1zG+Q60X2Hfxlc0vRMZgI5a6VmbKCBq/QE380hav8AsLDfoR9+T+tY2K+Hyyyue0ij28OxamHx7Iowwg2L4cSd5CbZA+Qi/V/iVslNHGGgNaKDRQGpoeJ1UIWswU0DqHos5xtxPWfVIQlpZCECukJKS0npBIprqcqlLsxsDD/oz9+T+pYpNiYcf8P99/8ANZbvicA1DvAe6n/0jEcW+J/xXI0pS6J+zIRwZ7T/ADWnLg4xwaPal/q0HB3gPdWP/n8ZxZ/6P+KqaRY1ZC0cljznu8guh8ShdoD4D3VR/wAMnZqW+J9kHBJ0Q5DyWR8h7vIIYZ13fZ3Ado5eKmjxjHGhfPes8ikMiXoxyHkFlQVqyjIpKRpMohCSlKTIIQlpCk5SpppSEKTqIQsdJaWQpU0JKUpOlQhLSWk6CE7SEIELIgmi0hCFJlCmhYyEKTpE00KSlOUChCx0iQighNIhSdBNO0hCBTpUJpSgQmQKE0lJSmKhSTSpSmKiE0hS0nKVJdL/2Q=="
+                     alt="" width="200">
+                </td>
+                <td>
+                    <a href="https://google.com">Ir a google</a> 
+                </td>
+            </tr>
+         </tbody>
+     </table>
+     <h2>Rowspan y colspan</h2>
+     <!--Este concepto se basa en poder alterar la informacion de mi tabla y poder combinar columnas-->
+     <table border="1">
+         <thead>
+             <tr>
+                 <th>Nombre</th> 
+                 <th>Apellido</th>
+                 <th>Edad</th>
+                 <th>Correo</th>
+                 <th colspan="3">Foto y Numero</th>
+             </tr>
+         </thead>
+         <tbody>
+             <tr>
+                 <td colspan="2">Juan Perez</td>
+                 <td>22</td>
+                 <td>Juan@gmail.com</td>
+                 <td><img src="../../imagenes/foto.jpg" alt="" width="100"></td>
+                 <td>9999</td>
+                 <td>111</td>
+             </tr>
+         </tbody>
+     </table>
+
+     <h2>Rowspan</h2>
+     <table border=1>
+         <thead>
+             <tr>
+                 <th>Curso</th>
+                 <th>Nombre</th>
+                 <th>Apellido</th>
+                 <th>Edad</th>
+             </tr>
+         </thead>
+         <tbody>
+             <tr>
+                 <td rowspan="3">HTML</td>
+                 <td>Juan</td>
+                 <td>Perez</td>
+                 <td>30</td>
+             </tr>
+             <tr>
+       
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>30</td>
+            </tr>
+            <tr>
+         
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td rowspan="3">PHP</td>
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>30</td>
+            </tr>
+            <tr>
+              
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>30</td>
+            </tr>
+            <tr>
+               
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Javascript</td>
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>30</td>
+            </tr>
+            <tr>
+      
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>30</td>
+            </tr>
+            <tr>
+      
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>30</td>
+            </tr>
+         </tbody>
+     </table>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+/* QUE ES CSS*/
+/*Para poder ver reflejado mis estilos en mi pagina web
+yo debo vincular mi .css en mi .html*/
+/*hojas de estilo en cascada*/
+/*Es un motor de estilos muy potentes*/
+/*Se acostumbre a tener un estilo global para quitarle
+el padding y el margin a una pagina web*/
+/** padding: es el espacio interno del elemento*/
+/*margin: es el espacio externo de un elemento*/
+
+
+/*Estilos globales
+para poder tener un estilo global para mi web yo pued
+usar el *  */
+
+/*Se recomienda solo manejar el margin, el padding y borderbox*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Ahora vamos a ver como aplicar a una etiqueta especial*/
+/* quiero que mi h1 sea de color rojo*/
+
+body{ /*font famili es el atributo si quiero aplicar un estilo
+    a todo mi body*/
+    /*Actualmente las computadoras viene con el tipo d eletra 
+    instalado*/
+    /*Los tipos de letra estan instalados en sus computadoras*/
+    /*Monsetrat: Es un tipo d eletra que no esta instalado, ha
+    y que descargaarlo para poder usar un tipo de letra externo
+    podemos descargarlo y agregarlo al proyecto como un archivo
+    o usar un link de referencia*/
+    /*hay algunos tipos de letra que necesitna estar entre comillas
+    porque pueden ser nombres compuestos*/
+    /*Uno puede anidar tipo de letra*/
+    /*Porque puede pasar que por ejemplo gill sans no este instalado e
+    n las maquinas para preveir eso ponermos opciones multiples
+    sino enuentra uno buscara otro*/
+    font-family: "Gill Sans",Helvetica,Arial,sans-serif;
+    background-color:#9cd;
+
+}
+
+h1{
+    color:#f01;
+    /*background color es el color de fondo de un elemento*/
+    background-color: #000;
+    /*font-weight:  esto es para poder asignarle un peso a las letras*/
+    /* Esta en el rango 100 - 900, pero tambien tiene la propuedad bold
+     que es para texto negrita 100 - 900*/
+    font-weight: bold;
+    text-align:center;
+}
+
+/**/
+
+section {
+    background-color: yellow;
+    /*border e suna propiedad para poner un borde a un elemento 
+    border recibe 3 cosas tamaño de pixel, color, solid(ipo de linea)*/
+    border: 1px #ab1234 solid;
+    
+}
+
+/*Como accede a un elemnto hijo*/
+/*Para poder acceder a un elemento en cascada puede anidar las
+etiquetas*/
+/*busca al elemento article y dentro de este debe estar p
+y a ese p ponle el color azul*/
+p{
+    text-align: justify;
+}
+article p{
+    color: blue;
+    /*text-align: permite poner el texto en 4 formas
+    alineado a la derecha
+    alineado a la izuqierda
+    centrado
+    justificado*/
+    text-align: center;
+    /*font-size sirve para manejar el tamaño del texto*/
+    font-size: 22px;
+
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/*Compo puedo hacer que mis li sean verdes*/
+
+li {
+    color:green;
+}
+
+nav{
+    border: solid 2px blue;
+    text-align: right;
+
+}
+
+ul{
+    background-color:#ddd;
+    border: solid 2px red;
+
+}
+
+ul li{
+    list-style: none;
+    /*display: es la propiedad en la que 
+    se puede mostrar un elemntospo default es display: block*/
+    display: inline;
+    
+}
+
+div{
+
+    border:5px solid #000;
+    text-align:center;
+}
+
+img{
+    /*la unidad basica del css son los px*/
+    width: 50%;
+    height:300px;
+}
+
+/*para poder acceder a un id que esta en html usamos # + nombre que
+le asignamos
+*/
+
+#titulo{
+    color:aquamarine;
+
+}
+
+#text_introduccion{
+    text-align: justify;
+}
+
+/*los id deben ser unicos*/
+/*en teoria los id deben unicos, es decir solo deben afectar a un elemento
+pero en la practicas se puede asignar pero no es buena practica*/
+
+
+/*para poder repetir identificadores de elementos se recomienda
+usar clases */
+
+/*para poder repetir identificadores de elementos se recomienda 
+usar clases */
+/*para poder acceder a una clase desde css usamos el .*/
+/*usando clases podemos reutilizar el codigo css*/
+
+.text_pagina{
+    color:chocolate;
+}
+
+#logo{
+    width:300px;
+    height:100px;
+    border: solid 4px rgb(73, 255, 240);
+}
