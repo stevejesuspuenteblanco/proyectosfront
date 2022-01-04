@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: arial;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+.wrap{
+height: 100vh;
+display: flex;
+flex-direction: column;
+margin: auto;
+width:960px;
+}
+
+.wrap .main{
+    flex-grow: 1;
+}
+
+.main{
+    padding:26px;
+}
+header{
+    padding:26px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+@font-face{
+    font-family:'Raleway';
+    src: url('../fonts/Raleway/static/Raleway-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+
+}
+
+.menu-nav{ 
+    display: flex;
+    list-style: none;
+    font-family: Raleway;
+
+}
+
+.menu-nav li:nth-child(1){
+    color:#6D0AD3;
+    border-bottom: 5px solid #6D0AD3;
+}
+
+.menu-nav li{
+    margin-right:23px;
+    font-weight: bold;
+    font-size: 1.0rem;
+}
+
+.menu-nav li a:hover{
+    color:#00CF95;
+    text-decoration:dotted;
+}
+
+.seccionpres{
+    display: flex;
+}
+
+.presentacion{
+    display: flex;
+    flex-direction: column;
+}
+
+.presentacion-a h3{
+    font-size: 0.9rem;
+    font-family: Raleway;
+ font-weight:bold;
+ line-height:25px;
+}
+
+
+.presentacion-a h2{
+    font-size: 1.3rem;
+    font-family: Raleway;
+ font-weight:bold;
+ line-height:25px;
+}
