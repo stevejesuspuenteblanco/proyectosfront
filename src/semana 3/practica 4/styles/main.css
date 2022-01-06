@@ -78,6 +78,7 @@ header{
 .presentacion{
     display: flex;
     flex-direction: column;
+    width: 40%;
 }
 
 .presentacion-a h3{
@@ -93,4 +94,36 @@ header{
     font-family: Raleway;
  font-weight:bold;
  line-height:25px;
+}
+
+.presentacion-b{
+    display: flex;
+    margin-top:10px;
+}
+
+.presentacion-b .barra{
+    height:100%;
+    width:20px;
+    background-color:#00CF95;
+}
+
+.presentacion-b p{
+ font-size: 0.9rem;
+
+ height: 100%;
+ margin-left: 18px;
+ line-height:22px;
+ 
+}
+
+.foto{
+    border:#00CF95 20px solid;
+    border-radius:100%;
+    height:286px;
+}
+.foto img{
+    border: 0;
+    border-radius: 100%;
+    margin-left: -15px;
+    margin-top:-11px;
 }

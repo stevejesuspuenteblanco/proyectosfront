@@ -1,0 +1,94 @@
+%layout-basic{
+    background: red;
+    padding:20px;
+    width:960px;
+
+}
+.header{
+    @extend %layout-basic;
+
+    
+}
+
+footer{
+  
+    @extend %layout-basic;
+
+}
+
+main
+{
+
+    @extend %layout-basic;
+}
+
+$base-url: 'https://larepublica.com';
+
+div{
+    background:url("#{$base-url}/images/image-one.jpg")
+}
+
+div{
+    background:url("#{$base-url}/images/image-one.jpg")
+}
+
+div{
+    background:url("#{$base-url}/images/image-one.jpg")
+}
+
+
+$color-primary:red;
+$color-secondary:blue;
+
+/*
+MIXING
+
+*/
+@mixin boxRounded($boxWidth,$boxHeight,$rounded){
+  width: $boxWidth;
+  height: $boxHeight;
+  border-radius:$rounded;
+}
+
+@mixin box-shadow($x,$y,$b,$color){
+    box-shadow: $x $y $b $color ;
+}
+
+@mixin fontSize($size){
+    @if($size == small){
+        font-size: 11px;
+        line-height: 22px;
+    }
+
+
+    @if($size == medium){
+        font-size:13px;
+        line-height: 26px;
+    }
+
+    @if($size == large){
+        font-size:14px;
+    }
+
+    @if($size == xlarge){
+        font-size:18px;
+    }
+
+}
+
+
+
+div{
+    @include boxRounded(40px, 40px,40px);
+    @include box-shadow(10px, 10px, 10px, red);
+    @include fontSize(small);
+
+}
+
+section{
+    @include boxRounded(60px, 60px,60px);
+    @include box-shadow(10px, 10px, 10px, blue);
+    @include fontSize(medium);
+
+
+}

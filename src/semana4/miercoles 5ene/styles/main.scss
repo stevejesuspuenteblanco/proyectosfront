@@ -1,0 +1,36 @@
+.button{
+    border:none;
+    width:213px;
+    height:68px;
+    background:red;
+    color:white;
+
+}
+
+.button-primary{
+    background:red;
+}
+
+.button-secondary{
+    background:#0b9685;
+}
+
+.container{
+    max-width: 400px;
+    margin:auto;
+}
+
+header{
+    background:red;
+    padding:20px 0px;
+}
+
+main{
+    background:green;
+    padding: 20px;
+}
+
+footer{
+    background:orange;
+    padding: 20px;
+}

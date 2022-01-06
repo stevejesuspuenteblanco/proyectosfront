@@ -1,0 +1,41 @@
+main, footer, .header {
+  background: red;
+  padding: 20px;
+  width: 960px;
+}
+
+div {
+  background: url("https://larepublica.com/images/image-one.jpg");
+}
+
+div {
+  background: url("https://larepublica.com/images/image-one.jpg");
+}
+
+div {
+  background: url("https://larepublica.com/images/image-one.jpg");
+}
+
+/*
+MIXING
+
+*/
+div {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  -webkit-box-shadow: 10px 10px 10px red;
+          box-shadow: 10px 10px 10px red;
+  font-size: 11px;
+  line-height: 22px;
+}
+
+section {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  -webkit-box-shadow: 10px 10px 10px blue;
+          box-shadow: 10px 10px 10px blue;
+  font-size: 13px;
+  line-height: 26px;
+}
