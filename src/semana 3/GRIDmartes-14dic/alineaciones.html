@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=style, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            margin:0;
+        }
+
+        main{
+            background: green;;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: auto;
+        }
+
+
+        .grid {
+            display: grid;
+            /* background: pink; */
+            grid-template-columns: repeat(4,100px);
+         
+            /* grid-template-rows: 1fr 100px; */ /*altura*/
+
+            /* grid-row-gap: 20px;*/   /*ESPACIO ENTRE FILAS*/
+            /*grid-column-gap: 20px; */  /*ESPACIO ENTRE COLUMNAS*/
+            grid-gap: 20px;  /*ABREVIADO PARA COLUMNAS Y FILAS*/
+            padding: 20px; 
+        }
+
+        .grid-vertical {
+            display: grid;
+            /* background: pink; */
+            grid-template-columns: repeat(4,100px);
+            grid-template-rows: repeat(2,200px);
+            /* grid-template-rows: 1fr 100px; */ /*altura*/
+
+            /* grid-row-gap: 20px;*/   /*ESPACIO ENTRE FILAS*/
+            /*grid-column-gap: 20px; */  /*ESPACIO ENTRE COLUMNAS*/
+            grid-gap: 20px;  /*ABREVIADO PARA COLUMNAS Y FILAS*/
+            padding: 20px; 
+        }
+
+        .grid-vertical-height100 {
+            display: grid;
+            /* background: pink; */
+            grid-template-columns: repeat(4,100px);
+            grid-template-rows: repeat(2,200px);
+            /* grid-template-rows: 1fr 100px; */ /*altura*/
+
+            /* grid-row-gap: 20px;*/   /*ESPACIO ENTRE FILAS*/
+            /*grid-column-gap: 20px; */  /*ESPACIO ENTRE COLUMNAS*/
+            grid-gap: 20px;  /*ABREVIADO PARA COLUMNAS Y FILAS*/
+            padding: 20px; 
+            height:100vh;
+        }
+
+
+        .grid div:nth-child(odd) {
+            background: red;
+        }
+
+        .grid div:nth-child(even) {
+            background: yellow;
+        }
+
+        .grid-vertical div:nth-child(odd) {
+            background: red;
+        }
+
+        .grid-vertical div:nth-child(even) {
+            background: yellow;
+        }
+
+
+        .grid-vertical-height100 div:nth-child(odd) {
+            background: red;
+        }
+
+        .grid-vertical-height100 div:nth-child(even) {
+            background: yellow;
+        }
+
+        .grid-vertical div:nth-child(odd) {
+            background: red;
+        }
+
+        .grid-vertical div:nth-child(even) {
+            background: yellow;
+        }
+             /*PARA ALINEAR HORIZONTALMENTE SE DEBE TENER ANCHO DISPO*/
+
+        .grid-center{
+            justify-items: center;
+        }
+
+        .grid-start{
+            justify-items: start;
+        }
+
+        .grid-end{
+            justify-items: end;
+        }
+
+        .grid-align-items-stretch{
+            align-items: stretch;
+        }
+
+
+
+        .grid-align-items-center{
+            align-items: center;
+        }
+
+        .grid-align-items-start{
+            align-items: start;
+        }
+
+        .grid-align-items-end{
+            align-items: end;
+        }
+
+
+
+
+        .grid-justify-content-start{
+         justify-content: start;
+        }
+
+        .grid-justify-content-center{
+         justify-content: center;
+        }
+
+        .grid-justify-content-end{
+         justify-content: end;
+        }
+
+        .grid-justify-content-space-around{
+         justify-content: space-around;
+        }
+
+        .grid-justify-content-space-evenly{
+         justify-content: space-evenly;
+        }
+        .grid-justify-content-stretch{
+         justify-content: stretch;
+        }
+
+        .grid-justify-content-space-between{
+         justify-content:space-between;
+        }
+
+
+
+
+
+        .grid-align-content-start{
+         align-content:start;
+        }
+
+
+        .grid-align-content-center{
+         align-content:center;
+        }
+
+
+        .grid-align-content-end{
+         align-content:end;
+        }
+
+
+        .grid-align-space-between{
+         align-content:space-between;
+        }
+
+
+        .grid-align-space-around{
+         align-content:space-around;
+        }
+
+
+        .grid-align-space-evenly{
+         align-content:space-evenly;
+        }
+         /*PARA ALINEAR VERTICALMENTE SE DEBE TENER ALTURA*/
+
+
+        img {
+            width: 100%;
+            display: block;/*ayuda a completar los espaciados*/
+        }
+    </style>
+    <main>
+        <div class="container">
+            <!--display: grid;  justify-items: center;-->
+            <h2>JUSTIFY ITEMS CENTER</h2>
+            <div class="grid grid-center">
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+            </div>
+        </div>
+        <div class="container">
+            <h2>JUSTIFY ITEMS START</h2>
+            <!--display: grid;  justify-items: start;-->
+            <div class="grid grid-start">
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+            </div>
+        </div>
+        <div class="container">
+            <h2>JUSTIFY ITEMS END</h2>
+            <!--display: grid;  justify-items: end;-->
+            <div class="grid grid-end">
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+            </div>
+        </div>
+        <div class="container">
+            <!--display: grid;  align-items: center;-->
+            <h2>ALIGN ITEMS START</h2>
+            <div class="grid-vertical grid-align-items-start">
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+            </div>
+        </div>
+        <div class="container">
+            <!--display: grid;  align-items: center;-->
+            <h2>ALIGN ITEMS CENTER</h2>
+            <div class="grid-vertical grid-align-items-center">
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+            </div>
+        </div>
+        <div class="container">
+            <!--display: grid;  align-items: end;-->
+            <h2>ALIGN ITEMS END</h2>
+            <div class="grid-vertical grid-align-items-end">
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <!--display: grid;  align-items: stretch;-->
+            <h2>ALIGN ITEMS STRETCH</h2>
+            <div class="grid-vertical grid-align-items-stretch">
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+            </div>
+        </div>
+        <div class="container">
+            <!--display: grid;  justify-content: start;-->
+            <h2>JUSTIFY CONTENT START</h2>
+            <div class="grid-vertical grid-align-items-stretch grid-justify-content-start">
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+            </div>
+        </div>
+        <div class="container">
+            <!--display: grid;  justify-content: center;-->
+            <h2>JUSTIFY CONTENT CENTER</h2>
+            <div class="grid-vertical grid-align-items-stretch grid-justify-content-center">
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div> 
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+            </div>
+        </div>
+        <div class="container">
+            <!--display: grid;  justify-content: end;-->
+            <h2>JUSTIFY CONTENT END</h2>
+            <div class="grid-vertical grid-align-items-stretch grid-justify-content-end">
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div> 
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+            </div>
+        </div>
+        <div class="container">
+            <!--display: grid;  justify-content: space-around;-->
+            <h2>JUSTIFY CONTENT SPACE AROUND</h2>
+            <div class="grid-vertical grid-align-items-stretch grid-justify-content-space-around">
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div> 
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+            </div>
+        </div>
+        <div class="container">
+            <!--display: grid;  justify-content: stretch;-->
+            <h2>JUSTIFY CONTENT STRETCH</h2>
+            <div class="grid-vertical grid-align-items-stretch grid-justify-content-stretch">
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div> 
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+            </div>
+        </div>
+        <div class="container">
+            <!--display: grid;  justify-content: space-between;-->
+            <h2>JUSTIFY CONTENT SPACEBETWEEN</h2>
+            <div class="grid-vertical grid-align-items-stretch grid-justify-content-space-between">
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div> 
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <!--ALIGN CONTENT SOLO FUNCIONA SI ES QUE EL ELEMENTO PADRE TIENE EL ALTO SUFICIENTE-->
+            <!--display: grid;  justify-content: space-between;-->
+            <h2>ALIGN CONTENT START</h2>
+            <div class="grid-vertical-height100 grid-justify-content-space-between grid-align-content-start">
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div> 
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <!--ALIGN CONTENT SOLO FUNCIONA SI ES QUE EL ELEMENTO PADRE TIENE EL ALTO SUFICIENTE-->
+            <!--display: grid;  justify-content: space-between;-->
+            <h2>ALIGN CONTENT CENTER</h2>
+            <div class="grid-vertical-height100 grid-justify-content-space-between grid-align-content-center">
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div> 
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <!--ALIGN CONTENT SOLO FUNCIONA SI ES QUE EL ELEMENTO PADRE TIENE EL ALTO SUFICIENTE-->
+            <!--display: grid;  justify-content: space-between;-->
+            <h2>ALIGN CONTENT END</h2>
+            <div class="grid-vertical-height100 grid-justify-content-space-between grid-align-content-end">
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div> 
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <!--ALIGN CONTENT SOLO FUNCIONA SI ES QUE EL ELEMENTO PADRE TIENE EL ALTO SUFICIENTE-->
+            <!--display: grid;  justify-content: space-between;-->
+            <h2>ALIGN CONTENT SPACE BETWEEN</h2>
+            <div class="grid-vertical-height100 grid-justify-content-space-between grid-align-content-space-between">
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div> 
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <!--ALIGN CONTENT SOLO FUNCIONA SI ES QUE EL ELEMENTO PADRE TIENE EL ALTO SUFICIENTE-->
+            <!--display: grid;  justify-content: space-between;-->
+            <h2>ALIGN CONTENT SPACE AROUND</h2>
+            <div class="grid-vertical-height100 grid-justify-content-space-between grid-align-content-space-around">
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div> 
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <!--ALIGN CONTENT SOLO FUNCIONA SI ES QUE EL ELEMENTO PADRE TIENE EL ALTO SUFICIENTE-->
+            <!--display: grid;  justify-content: space-between;-->
+            <h2>ALIGN CONTENT SPACE EVENLY</h2>
+            <div class="grid-vertical-height100 grid-justify-content-space-between grid-align-content-space-evenly">
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div> 
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+                <div>hola</div>
+            </div>
+        </div>
+        <!--TAMBIEN SE TIENE justify-self:stretch; que se tiene en un hijo del grid se desplaza de manera horizontal
+           TAMBIEN SE TIENE align-self:end; que se desplaza dentro de lo alto
+        -->
+    </main>
+
+</body>
+
+</html>

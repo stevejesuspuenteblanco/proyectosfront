@@ -44,7 +44,25 @@
         img {
             width: 100%;
             display: block;/*ayuda a completar los espaciados*/
+            height:100%;
+            object-fit: cover; /*hace que se estira la imagen*/
         }
+
+        .grid div:nth-child(1){
+       /* grid-column-start:1;
+        grid-column-end: 3; cuentan por lineas
+        grid-row-start: 1;
+        grid-row-end: 3;*/
+        grid-column-end: span 2;/*cuenta dos espacios*/
+        grid-row-end: span 2;
+        }
+
+        .grid div:nth-child(2){
+  
+        grid-column-end: span 2;
+        grid-row-end: span 2;
+        }
+
     </style>
     <main>
         <div class="container">
