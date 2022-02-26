@@ -116,6 +116,7 @@ header {
   font-family: Poppins;
   font-size: 32px;
   color: #00cf95;
+  text-shadow: 6px 6px 0 #d5deea;
 }
 
 .presentacion-b {
@@ -150,10 +151,9 @@ header {
 }
 
 .presentacion-c button {
-  background: #6d0ad3;
-  border: 1px solid #6d0ad3;
+  background: radial-gradient(red 5%, blue 64%, #6d0ad3 50%);
+  border-radius: 8px;
   cursor: pointer;
-  border: 0;
   color: white;
   padding: 10px 35px;
 }
@@ -206,6 +206,11 @@ section h2 {
 .section-portfolio-images img {
   width: 100%;
   display: block;
+  transition: all 0.5s ease;
+}
+
+.section-portfolio-images div img:hover {
+  transform: scale(2);
 }
 
 .section-services-areas {
@@ -240,6 +245,18 @@ section h2 {
   width: 75%;
   margin-left: 75px;
   padding-right: 30px;
+}
+
+.section-services-areas div:hover {
+  box-shadow: 0 0 10px blue;
+  transition: all 1.5s ease;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  grid-gap: 20px;
+  margin: auto;
+  width: 67%;
+  margin-top: 50px;
 }
 
 .section-services-areas div:nth-child(1) p {
